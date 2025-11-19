@@ -101,14 +101,14 @@ const Projects = ({ currentSlide, setCurrentSlide }) => {
         description: 'A connections-style game for TFT players.', 
         tags: ['JavaScript', 'CSS', 'HTML', 'React'],
         link: 'https://github.com/hectorlubi/ConnecTFTions',
-        image: 'assets/images/connectftions.png'
+        image: './assets/images/connectftions.png'
       },
       { 
         title: 'KeyboardSurvivor', 
         description: 'Fast-paced typing/rogue-like game with augments', 
         tags: ['Unity', 'C#'],
         link: null,
-        image: 'assets/images/typinggame.png'
+        image: './assets/images/typinggame.png'
       },
       { 
         title: 'Trait Solver', 
@@ -122,21 +122,21 @@ const Projects = ({ currentSlide, setCurrentSlide }) => {
         title: '3D R.E.P.O Scene', 
         description: 'Final assignment for graphics class. Rendered using OpenGL.', 
         tags: ['C++'],
-        image: 'assets/images/repo.png'
+        image: './assets/images/repo.png'
       },
       { 
         title: 'Connect 4', 
         description: 'My version of Connect 4 features an AI opponent powered by the minimax algorithm', 
         tags: ['Java'],
         link: null,
-        image: 'assets/images/connect.png'
+        image: './assets/images/connect.png'
       },
       { 
         title: 'Message Board Web Application', 
         description: 'Multi-threaded API web sever', 
         tags: ['Python', 'JavaScript', 'HTML', 'CSS'],
         link: null,
-        image: 'assets/images/messageboard.png'
+        image: './assets/images/messageboard.png'
       }
     ]
   ];

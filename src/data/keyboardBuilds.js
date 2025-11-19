@@ -14,8 +14,8 @@ export const keyboardBuilds = [
     plate: 'Plateless',
     layout: '65%',
     description: 'My first plateless build.',
-    image: '/assets/images/keyboards/neo65.jpg',
-    soundTest: '/assets/audio/soundtests/neo65.mp3',
+    image: './assets/images/keyboards/neo65.jpg',
+    soundTest: './assets/audio/soundtests/neo65.mp3',
     tags: ['Tactile', 'Budget', 'Retro White', 'Solder']
   },
   {
@@ -26,8 +26,8 @@ export const keyboardBuilds = [
     plate: 'Aluminum',
     layout: 'TKL',
     description: 'My first TKL board.',
-    image: '/assets/images/keyboards/keyboard-2.png',
-    soundTest: '/assets/audio/soundtests/keyboard-2.mp3',
+    image: './assets/images/keyboards/keyboard-2.png',
+    soundTest: './assets/audio/soundtests/keyboard-2.mp3',
     tags: ['Linear', 'End Game', 'Silver', 'Solder']
   },
   {
@@ -38,8 +38,8 @@ export const keyboardBuilds = [
     plate: 'PP',
     layout: 'Alice (65%)',
     description: 'My first ergonomic keyboard.',
-    image: '/assets/images/keyboards/ergo.jpg',
-    soundTest: '/assets/audio/soundtests/ergo.mp3',
+    image: './assets/images/keyboards/ergo.jpg',
+    soundTest: './assets/audio/soundtests/ergo.mp3',
     tags: ['Tactile', 'Ergonomic', 'Baby Blue', 'Hotswap']
   },
   {
@@ -50,8 +50,8 @@ export const keyboardBuilds = [
     plate: 'POM',
     layout: '65%',
     description: 'My first grail keyboard.',
-    image: '/assets/images/keyboards/vega.jpg',
-    soundTest: '/assets/audio/soundtests/vega.mp3',
+    image: './assets/images/keyboards/vega.jpg',
+    soundTest: './assets/audio/soundtests/vega.mp3',
     tags: ['Tactile', 'Grail', 'White', 'Hotswap']
   },
   {
@@ -67,15 +67,15 @@ export const keyboardBuilds = [
     tags: ['Tactile', 'Grail', 'Navy/Navy', 'Hotswap']
   },
   {
-    id: 5,
+    id: 6,
     name: 'Matrix 6XV Corsa',
     switch: 'Gateron Type-R',
     keycaps: 'Drop DCX Camillo',
     plate: 'Aluminum',
     layout: '65%',
     description: 'Meteorite Gray',
-    image: '/assets/images/keyboards/corsa.jpg',
-    soundTest: '/assets/audio/soundtests/corsa.mp3',
+    image: './assets/images/keyboards/corsa.jpg',
+    soundTest: './assets/audio/soundtests/corsa.mp3',
     tags: ['Tactile', 'Meteorite Gray', 'Hotswap']
   },
 ];
