@@ -62,8 +62,8 @@ export const keyboardBuilds = [
     plate: 'Aluminum 1.5mm V1.1',
     layout: 'TKL',
     description: 'heavy ahhh board',
-    image: '/assets/images/keyboards/f1.jpg',
-    soundTest: '/assets/audio/soundtests/f1.mp3',
+    image: './assets/images/keyboards/f1.jpg',
+    soundTest: './assets/audio/soundtests/f1.mp3',
     tags: ['Tactile', 'Grail', 'Navy/Navy', 'Hotswap']
   },
   {
