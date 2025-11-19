@@ -30,14 +30,12 @@ const App = () => {
   // Component Render
   // ========================================
    return (
-    <BrowserRouter>
-      <div className={`app ${theme}`}>
-        <Routes>
-          <Route path="/" element={<HomePage theme={theme} toggleTheme={toggleTheme} />} />
-          <Route path="/keyboards" element={<KeyboardsPage theme={theme} toggleTheme={toggleTheme} />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className={`app ${theme}`}>
+      <Routes>
+        <Route path="/" element={<HomePage theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/keyboards" element={<KeyboardsPage theme={theme} toggleTheme={toggleTheme} />} />
+      </Routes>
+    </div>
   );
 };
 
