@@ -1,0 +1,597 @@
+/* ========================================
+   KEYBOARDS PAGE STYLES
+   ======================================== */
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 100;
+}
+
+.nav-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+}
+
+/* ========================================
+   KEYBOARD HERO SECTION
+   ======================================== */
+.keyboard-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #76ccf7 0%, var(--primary) 100%);
+  padding: 100px 20px;
+}
+
+.keyboard-hero .container {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app.dark .keyboard-hero {
+  background: radial-gradient(circle at center, var(--primary) 0%, #000000 100%);
+}
+
+.keyboard-hero-content {
+  text-align: center;
+  max-width: 1400px;
+}
+
+.keyboard-hero-title {
+  font-size: 4rem;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.keyboard-hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text);
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.start-game-btn {
+  padding: 20px 60px;
+  background: var(--text);
+  color: var(--primary);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 60px;
+}
+
+.start-game-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.game-instructions {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.game-instructions h3 {
+  color: var(--text);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.game-instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-instructions li {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* ========================================
+   RHYTHM GAME STYLES
+   ======================================== */
+.rhythm-game {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.game-board {
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-btn {
+  padding: 30px 80px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.key-circles-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Key Circle Styles */
+.key-circle-wrapper {
+  position: absolute;
+}
+
+.key-circle {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.key-letter {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================
+   GAME UI STYLES
+   ======================================== */
+.game-ui {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.score-display,
+.combo-display,
+.max-combo-display {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.combo-value {
+  color: var(--primary);
+}
+
+.app.dark .combo-value {
+  color: #6acbff;
+}
+
+.combo-fire {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Feedback Overlay */
+.feedback-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.feedback-perfect { color: #FFD700; }
+
+.feedback-good { color: #00FF00; }
+
+.feedback-ok { color: #87CEEB; }
+
+.feedback-miss { color: #FF4444; }
+
+/* Progress Bar */
+.progress-bar-container { margin-bottom: 20px; }
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 8px;
+  transition: width 0.1s linear;
+}
+
+/* Game Controls */
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: var(--text);
+}
+
+.volume-slider {
+  width: 120px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.volume-label {
+  font-weight: 600;
+  min-width: 40px;
+  text-align: right;
+}
+
+.control-btn {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.exit-btn:hover {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+/* Paused Overlay */
+.paused-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.paused-overlay h2 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.paused-overlay p {
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+/* ========================================
+   KEYBOARD GALLERY STYLES
+   ======================================== */
+.keyboard-gallery {
+  background: radial-gradient(circle at center, var(--light) 0%, #727272 100%);
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+.app.dark .keyboard-gallery {
+  background: radial-gradient(circle at center, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.gallery-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.keyboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   KEYBOARD CARD STYLES
+   ======================================== */
+.keyboard-card {
+  background: var(--light);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.app.dark .keyboard-card {
+  background: var(--light);
+}
+
+.keyboard-card-image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.keyboard-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.keyboard-card:hover .keyboard-card-image img {
+  transform: scale(1.1);
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+}
+
+/* Sound Overlay */
+.sound-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.sound-btn {
+  background: white;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: all;
+  color: var(--primary);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.playing-indicator {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Keyboard Card Content */
+.keyboard-card-content {
+  padding: 30px;
+}
+
+.keyboard-name {
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.keyboard-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spec-label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.spec-value {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.keyboard-description {
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.keyboard-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+  .keyboard-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .keyboard-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .game-board {
+    height: 400px;
+  }
+
+  .game-stats {
+    flex-direction: column;
+  }
+
+  .keyboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .feedback-overlay {
+    font-size: 2rem;
+  }
+}
